@@ -701,15 +701,188 @@
         "166174190211a6b040-2"
       ],
       "settings": {
-        "title": "Encuentra todo en",
+        "title": "Mini banners grid",
         "title_color": "#f1f1f1",
         "banners_border_radius": 10,
         "reverse_columns": false,
         "banner_text_color": "#FFF",
         "banner_button_color": "#FFF",
         "banner_button_text_color": "#268ECD",
-        "padding_top": 36,
+        "padding_top": 100,
         "padding_bottom": 36
+      }
+    },
+    "1661742043c4b144c9": {
+      "type": "bubble-testimonials",
+      "blocks": {
+        "1661742043d89faa75-0": {
+          "type": "bubble-testimonial",
+          "settings": {
+            "bubbles-body-text": "Lorem ipsum dolor sit amet",
+            "inMobile": true,
+            "title": "- Autor 1",
+            "bubble_font_color": "#000000",
+            "bubble_bg_color": "#FFFFFF",
+            "text_bubble_bold": false,
+            "bubble-position-left": 0,
+            "bubble-position-top": 0,
+            "bubble_delay": 0,
+            "tail_position": "left",
+            "bubble_position": "left"
+          }
+        },
+        "1661742043d89faa75-1": {
+          "type": "bubble-testimonial",
+          "settings": {
+            "bubbles-body-text": "Lorem ipsum dolor sit amet",
+            "inMobile": true,
+            "title": "- Autor 1",
+            "bubble_font_color": "#000000",
+            "bubble_bg_color": "#FFFFFF",
+            "text_bubble_bold": false,
+            "bubble-position-left": 30,
+            "bubble-position-top": 58,
+            "bubble_delay": 0,
+            "tail_position": "left",
+            "bubble_position": "left"
+          }
+        },
+        "1661742043d89faa75-2": {
+          "type": "bubble-testimonial",
+          "settings": {
+            "bubbles-body-text": "💕🍵️🔥",
+            "inMobile": true,
+            "title": "",
+            "bubble_font_color": "#000000",
+            "bubble_bg_color": "#FFFFFF",
+            "text_bubble_bold": false,
+            "bubble-position-left": 16,
+            "bubble-position-top": 20,
+            "bubble_delay": 0,
+            "tail_position": "left",
+            "bubble_position": "left"
+          }
+        },
+        "1661742043d89faa75-3": {
+          "type": "bubble-testimonial",
+          "settings": {
+            "bubbles-body-text": "⭐⭐⭐⭐⭐",
+            "inMobile": true,
+            "title": "",
+            "bubble_font_color": "#000000",
+            "bubble_bg_color": "#FFFFFF",
+            "text_bubble_bold": false,
+            "bubble-position-left": 82,
+            "bubble-position-top": 14,
+            "bubble_delay": 0,
+            "tail_position": "left",
+            "bubble_position": "left"
+          }
+        },
+        "1661742043d89faa75-4": {
+          "type": "bubble-testimonial",
+          "settings": {
+            "bubbles-body-text": "Que onda el equipo? Demasiado secos",
+            "inMobile": true,
+            "title": "- Autor 1",
+            "bubble_font_color": "#000000",
+            "bubble_bg_color": "#FFFFFF",
+            "text_bubble_bold": false,
+            "bubble-position-left": 48,
+            "bubble-position-top": 0,
+            "bubble_delay": 0,
+            "tail_position": "left",
+            "bubble_position": "left"
+          }
+        },
+        "1661742043d89faa75-5": {
+          "type": "bubble-testimonial",
+          "settings": {
+            "bubbles-body-text": "La mejor agencia de Shopify...",
+            "inMobile": true,
+            "title": "- Autor 1",
+            "bubble_font_color": "#000000",
+            "bubble_bg_color": "#FFFFFF",
+            "text_bubble_bold": false,
+            "bubble-position-left": 60,
+            "bubble-position-top": 28,
+            "bubble_delay": 0,
+            "tail_position": "left",
+            "bubble_position": "left"
+          }
+        },
+        "1661742043d89faa75-6": {
+          "type": "bubble-testimonial",
+          "settings": {
+            "bubbles-body-text": "Lorem ipsum dolor sit amet",
+            "inMobile": true,
+            "title": "- Autor 1",
+            "bubble_font_color": "#000000",
+            "bubble_bg_color": "#FFFFFF",
+            "text_bubble_bold": false,
+            "bubble-position-left": 20,
+            "bubble-position-top": 36,
+            "bubble_delay": 0,
+            "tail_position": "left",
+            "bubble_position": "left"
+          }
+        },
+        "1661742043d89faa75-7": {
+          "type": "bubble-dots",
+          "settings": {
+            "bubble-position-left": 0,
+            "bubble-position-top": 46,
+            "bubble_delay": 0,
+            "dots_position": "right",
+            "inMobile": true
+          }
+        },
+        "1661742043d89faa75-8": {
+          "type": "bubble-dots",
+          "settings": {
+            "bubble-position-left": 72,
+            "bubble-position-top": 52,
+            "bubble_delay": 0,
+            "dots_position": "right",
+            "inMobile": true
+          }
+        },
+        "1661742043d89faa75-9": {
+          "type": "bubble-dots",
+          "settings": {
+            "bubble-position-left": 36,
+            "bubble-position-top": 12,
+            "bubble_delay": 0,
+            "dots_position": "right",
+            "inMobile": true
+          }
+        }
+      },
+      "block_order": [
+        "1661742043d89faa75-0",
+        "1661742043d89faa75-1",
+        "1661742043d89faa75-2",
+        "1661742043d89faa75-3",
+        "1661742043d89faa75-4",
+        "1661742043d89faa75-5",
+        "1661742043d89faa75-6",
+        "1661742043d89faa75-7",
+        "1661742043d89faa75-8",
+        "1661742043d89faa75-9"
+      ],
+      "settings": {
+        "testimonial_bgcolor": "#d6dfec",
+        "bg_opacity": 0,
+        "background_vertical_alignment": "center",
+        "background_horizontal_alignment": "center",
+        "min_height": 400,
+        "testimonial_heading_title": "Testimonios",
+        "heading_mt": 0.5,
+        "heading_mb": 2,
+        "testimonial_heading_color1": "#000000",
+        "testimonial_heading_position": "center",
+        "font_size": 32,
+        "font_weight": "normal"
       }
     }
   },
@@ -725,6 +898,7 @@
     "1661741374da929fd5",
     "1661741597b6fbed82",
     "1661741834c9da5f0e",
-    "1661741902ed5714f6"
+    "1661741902ed5714f6",
+    "1661742043c4b144c9"
   ]
 }
