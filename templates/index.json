@@ -872,11 +872,11 @@
       ],
       "settings": {
         "testimonial_bgcolor": "#d6dfec",
-        "bg_opacity": 0,
+        "bg_opacity": 0.5,
         "background_vertical_alignment": "center",
         "background_horizontal_alignment": "center",
         "min_height": 400,
-        "testimonial_heading_title": "Testimonios",
+        "testimonial_heading_title": "Bubble testimonials",
         "heading_mt": 0.5,
         "heading_mb": 2,
         "testimonial_heading_color1": "#000000",
