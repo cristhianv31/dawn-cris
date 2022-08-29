@@ -673,7 +673,7 @@
         "166174190211a6b040-1": {
           "type": "secondary_banner",
           "settings": {
-            "background": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(0, 0, 0, 1) 100%)",
+            "background": "linear-gradient(180deg, rgba(247, 0, 255, 1), rgba(0, 0, 0, 1) 100%)",
             "pretitle": "Categoria",
             "title": "Juegos y Juguetes",
             "button_label": "Ver todo",
@@ -685,7 +685,7 @@
         "166174190211a6b040-2": {
           "type": "secondary_banner",
           "settings": {
-            "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1) 100%)",
+            "background": "linear-gradient(87deg, rgba(226, 33, 32, 1), rgba(0, 0, 0, 1) 100%)",
             "pretitle": "Categoria",
             "title": "Juegos y Juguetes",
             "button_label": "Ver todo",
