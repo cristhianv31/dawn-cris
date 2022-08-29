@@ -493,7 +493,7 @@
       ],
       "settings": {
         "title": "Mini banners grid",
-        "title_color": "#f1f1f1",
+        "title_color": "#000000",
         "banners_border_radius": 10,
         "reverse_columns": false,
         "banner_text_color": "#FFF",
