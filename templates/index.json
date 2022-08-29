@@ -651,6 +651,64 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "1661741902ed5714f6": {
+      "type": "mini-banners-grid",
+      "blocks": {
+        "166174190211a6b040-0": {
+          "type": "main_banner",
+          "settings": {
+            "background": "linear-gradient(94deg, rgba(24, 120, 185, 1), rgba(26, 203, 220, 1) 100%)",
+            "pretitle": "Categoria",
+            "title": "Hogar y Decoración",
+            "button_label": "Ver todo",
+            "url": "",
+            "main_image": "shopify:\/\/shop_images\/REMEX_HOGAR_DECORACION.png",
+            "main_image_scale": 37,
+            "small_image1": "shopify:\/\/shop_images\/2.jpg",
+            "small_image2": "shopify:\/\/shop_images\/1.jpg",
+            "small_image3": "shopify:\/\/shop_images\/3.jpg"
+          }
+        },
+        "166174190211a6b040-1": {
+          "type": "secondary_banner",
+          "settings": {
+            "background": "linear-gradient(#ffffff, #000000)",
+            "pretitle": "Categoria",
+            "title": "Juegos y Juguetes",
+            "button_label": "Ver todo",
+            "url": "",
+            "main_image_scale": 0
+          }
+        },
+        "166174190211a6b040-2": {
+          "type": "secondary_banner",
+          "settings": {
+            "background": "linear-gradient(#ffffff, #000000)",
+            "pretitle": "Categoria",
+            "title": "Juegos y Juguetes",
+            "button_label": "Ver todo",
+            "url": "",
+            "main_image_scale": 0
+          }
+        }
+      },
+      "block_order": [
+        "166174190211a6b040-0",
+        "166174190211a6b040-1",
+        "166174190211a6b040-2"
+      ],
+      "settings": {
+        "title": "Encuentra todo en",
+        "title_color": "#f1f1f1",
+        "banners_border_radius": 10,
+        "reverse_columns": false,
+        "banner_text_color": "#FFF",
+        "banner_button_color": "#FFF",
+        "banner_button_text_color": "#268ECD",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -664,6 +722,7 @@
     "1661741250daeb6c33",
     "1661741374da929fd5",
     "1661741597b6fbed82",
-    "1661741834c9da5f0e"
+    "1661741834c9da5f0e",
+    "1661741902ed5714f6"
   ]
 }
