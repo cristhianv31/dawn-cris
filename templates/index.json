@@ -325,7 +325,7 @@
             "horizontal_position1": 4,
             "vertical_position": 1,
             "vertical_position1": 5,
-            "button_position": "bottom center",
+            "button_position": "center",
             "z_index": 1,
             "column_width": "100%"
           }
