@@ -215,25 +215,29 @@
         "16617411189825cb33-0": {
           "type": "text",
           "settings": {
-            "tab_text": "Texto en tab"
+            "tab_icon": "shopify:\/\/shop_images\/earth.png",
+            "tab_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           }
         },
         "16617411189825cb33-1": {
           "type": "text",
           "settings": {
-            "tab_text": "Texto en tab"
+            "tab_icon": "shopify:\/\/shop_images\/chemistry.png",
+            "tab_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac lorem metus. Curabitur varius ipsum sapien"
           }
         },
         "16617411189825cb33-2": {
           "type": "text",
           "settings": {
+            "tab_icon": "shopify:\/\/shop_images\/papaya.png",
             "tab_text": "Texto en tab"
           }
         },
         "16617411189825cb33-3": {
           "type": "text",
           "settings": {
-            "tab_text": "Texto en tab"
+            "tab_icon": "shopify:\/\/shop_images\/carrot.png",
+            "tab_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           }
         }
       },
