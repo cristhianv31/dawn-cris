@@ -248,7 +248,7 @@
         "16617411189825cb33-3"
       ],
       "settings": {
-        "heading_text": "Insert a title",
+        "heading_text": "Icon tabs",
         "font_size": 32,
         "heading_font": "helvetica_n4",
         "text_wrap": "nowrap",
@@ -296,7 +296,7 @@
         "16617412498b1f0568-2"
       ],
       "settings": {
-        "heading": "¿Qué deseas ver?",
+        "heading": "Collection switcher",
         "product_count": 4,
         "arrow_color": "#000",
         "autoplay": false
@@ -439,8 +439,103 @@
         "166174137334249697-3"
       ],
       "settings": {
-        "title": "Section title",
+        "title": "Grid images",
         "padding": 20
+      }
+    },
+    "1661741597b6fbed82": {
+      "type": "haciendola-shop-the-look",
+      "blocks": {
+        "a4e19ccb-862f-485a-8244-e6b24c8e6e25": {
+          "type": "item",
+          "settings": {
+            "title": "Item title",
+            "image": "shopify:\/\/shop_images\/REMEX_HOGAR_DECORACION.png",
+            "image-mobile": "shopify:\/\/shop_images\/REMEX_HOGAR_DECORACION.png",
+            "link": "",
+            "link-text": "",
+            "product1": "",
+            "product1-x": 50,
+            "product1-y": 50,
+            "product1-x-mobile": 50,
+            "product1-y-mobile": 50,
+            "product2": "",
+            "product2-x": 50,
+            "product2-y": 50,
+            "product2-x-mobile": 50,
+            "product2-y-mobile": 50,
+            "product3": "",
+            "product3-x": 50,
+            "product3-y": 50,
+            "product3-x-mobile": 50,
+            "product3-y-mobile": 50,
+            "product4": "",
+            "product4-x": 50,
+            "product4-y": 50,
+            "product4-x-mobile": 50,
+            "product4-y-mobile": 50,
+            "product5": "",
+            "product5-x": 50,
+            "product5-y": 50,
+            "product5-x-mobile": 50,
+            "product5-y-mobile": 50,
+            "product6": "",
+            "product6-x": 50,
+            "product6-y": 50,
+            "product6-x-mobile": 50,
+            "product6-y-mobile": 50
+          }
+        },
+        "5345362a-1650-4de9-ace4-1f2a7cff25c1": {
+          "type": "item",
+          "settings": {
+            "title": "Item title",
+            "image": "shopify:\/\/shop_images\/REMEX_SILLA_GAMER.png",
+            "image-mobile": "shopify:\/\/shop_images\/REMEX_SILLA_GAMER.png",
+            "link": "",
+            "link-text": "",
+            "product1": "",
+            "product1-x": 50,
+            "product1-y": 50,
+            "product1-x-mobile": 50,
+            "product1-y-mobile": 50,
+            "product2": "",
+            "product2-x": 50,
+            "product2-y": 50,
+            "product2-x-mobile": 50,
+            "product2-y-mobile": 50,
+            "product3": "",
+            "product3-x": 50,
+            "product3-y": 50,
+            "product3-x-mobile": 50,
+            "product3-y-mobile": 50,
+            "product4": "",
+            "product4-x": 50,
+            "product4-y": 50,
+            "product4-x-mobile": 50,
+            "product4-y-mobile": 50,
+            "product5": "",
+            "product5-x": 50,
+            "product5-y": 50,
+            "product5-x-mobile": 50,
+            "product5-y-mobile": 50,
+            "product6": "",
+            "product6-x": 50,
+            "product6-y": 50,
+            "product6-x-mobile": 50,
+            "product6-y-mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "a4e19ccb-862f-485a-8244-e6b24c8e6e25",
+        "5345362a-1650-4de9-ace4-1f2a7cff25c1"
+      ],
+      "settings": {
+        "background": "",
+        "title": "Section Title",
+        "highlight": "#0099ff",
+        "highlight-text": "#ffffff"
       }
     }
   },
@@ -453,6 +548,7 @@
     "multicolumn",
     "1661741118685bcdd7",
     "1661741250daeb6c33",
-    "1661741374da929fd5"
+    "1661741374da929fd5",
+    "1661741597b6fbed82"
   ]
 }
