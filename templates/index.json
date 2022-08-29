@@ -260,10 +260,11 @@
         "padding_bottom1": 20,
         "padding_top_icons1": 20,
         "padding_bottom_icons1": 20,
-        "mb_textbox": 25,
+        "mb_textbox": 100,
+        "background_image1": "shopify:\/\/shop_images\/mateo-giraud-wtBex4wQw60-unsplash.jpg",
         "background_vertical_alignment": "center",
         "background_horizontal_alignment": "center",
-        "bg_opacity": 0,
+        "bg_opacity": 0.4,
         "color_background1": "#E1E1E1"
       }
     }
