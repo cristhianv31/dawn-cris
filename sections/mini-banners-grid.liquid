@@ -1,0 +1,568 @@
+<style>
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  #mini__banners-grid-{{ section.id }} .mini_banner-grid-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    gap: 50px;
+  }
+
+  #mini__banners-grid-{{ section.id }} .button {
+    background-color: {{ section.settings.banner_button_color }};
+    color: {{ section.settings.banner_button_text_color }} !important;
+  }
+
+  #mini__banners-grid-{{ section.id }} .button::before {
+    content: unset;
+  }
+  #mini__banners-grid-{{ section.id }} .button::after {
+    content: unset;
+  }
+
+  #mini__banners-grid-{{ section.id }} .button {
+    background-color: {{ section.settings.banner_button_color }};
+  }
+
+  #mini__banners-grid-{{ section.id }} p,
+  #mini__banners-grid-{{ section.id }} h1,
+  #mini__banners-grid-{{ section.id }} h2 {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  #mini__banners-grid-{{ section.id }} .main__banner-heading {
+    font-size: 2.7rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    #mini__banners-grid-{{ section.id }} .main__banner-heading {
+      font-size: 2.2rem;
+    }
+  }
+
+  #mini__banners-grid-{{ section.id }} p {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #mini__banners-grid-{{ section.id }} h2 {
+    font-size: 2rem;
+  }
+  {% for block in section.blocks %}
+    #mini__banners-grid-{{ section.id }} #main__banner-{{ block.id }} {
+      background: {{ block.settings.background }};
+    }
+
+    #mini__banners-grid-{{ section.id }} #mini__banner-{{ block.id }} {
+      background: {{ block.settings.background }};
+    }
+  {% endfor %}
+
+  #mini__banners-grid-{{ section.id }} .main__banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 50px;
+    border-radius: {{ section.settings.banners_border_radius }}px;
+  }
+
+  #mini__banners-grid-{{ section.id }} .main__banner .main__banner-text * {
+    color: {{ section.settings.banner_text_color }};
+  }
+
+  #mini__banners-grid-{{ section.id }} .mini_banner-grid-container .button {
+    margin-top: 15px;
+  }
+
+  #mini__banners-grid-{{ section.id }} .main__banner .main__banner-image {
+    width: 300px;
+  }
+
+  {% for block in section.blocks %}
+    #mini__banners-grid-{{ section.id }} .main__banner #main-image-{{ block.id }} {
+      {% if block.settings.main_image_scale > 1 %}
+        transform: scale(1.{{ block.settings.main_image_scale }});
+      {% else %}
+        transform: unset;
+      {% endif %}
+      margin-left: 10%;
+    }
+
+    @media screen and (max-width: 768px) {
+      #mini__banners-grid-{{ section.id }} .main__banner #main-image-{{ block.id }} {
+        margin-left: unset;
+      }
+    }
+
+    #mini__banners-grid-{{ section.id }} .mini__banners-grid #mini__banner-image--{{ block.id }} img {
+      {% if block.settings.main_image_scale > 1 %}
+        transform: scale(1.{{ block.settings.main_image_scale }});
+      {% else %}
+        transform: unset;
+      {% endif %}
+    }
+  {% endfor %}
+
+  #mini__banners-grid-{{ section.id }} .main__banner .main__banner-mini-images {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  #mini__banners-grid-{{ section.id }} .main__banner .mini__images-container {
+    height: 100px;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #mini__banners-grid-{{ section.id }} .main__banner .mini__images-container {
+      height: unset;
+    }
+
+    #mini__banners-grid-{{ section.id }} .mini__banner-image-container {
+      width: 70%
+    }
+  }
+
+  #mini__banners-grid-{{ section.id }} .main__banner .mini__images-container img {
+    border-radius: 25px;
+  }
+
+  #mini__banners-grid-{{ section.id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #mini__banners-grid-{{ section.id }} .mini__banners-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  #mini__banners-grid-{{ section.id }} .mini__banners-grid .mini__banner-text-container * {
+    color: {{ section.settings.banner_text_color }};
+  }
+
+  #mini__banners-grid-{{ section.id }} .mini__banners-grid .mini__banner {
+    display: flex;
+    padding: 25px 50px;
+    border-radius: {{ section.settings.banners_border_radius }}px;
+    justify-content: space-between;
+  }
+
+
+  #mini__banners-grid-{{ section.id }} .mini__banner {
+    width: 45%;
+    height: 200px;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    #mini__banners-grid-{{ section.id }} .mini__banners-grid {
+      max-height: unset;
+      flex-direction: column;
+    }
+
+    #mini__banners-grid-{{ section.id }} .button {
+      padding: 0 2rem;
+    }
+
+    #mini__banners-grid-{{ section.id }} .mini__banners-grid .mini__banner {
+      padding: 25px;
+      width: 100%;
+      align-items: center;
+      gap: 30px;
+    }
+
+    #mini__banners-grid-{{ section.id }} .main__banner {
+      display: flex;
+      flex-direction: column;
+      align-items: unset;
+      justify-content: unset;
+      padding: 25px;
+      gap: 20px;
+    }
+    
+    #mini__banners-grid-{{ section.id }} .main__banner .main__banner-image {
+      width: unset;
+    }
+
+    {% for block in section.blocks %}
+      #mini__banners-grid-{{ section.id }} .main__banner #main-image-{{ block.id }} {
+        transform: unset;
+      }
+
+      #mini__banners-grid-{{ section.id }} .mini__banners-grid #mini__banner-image--{{ block.id }} img {
+        transform: unset;
+      }
+      #main__banner-{{ block.id }} .main__banner-text {
+        order: 1;
+      }
+  
+      #main__banner-{{ block.id }} .main__banner-image {
+        order: 0;
+      }
+  
+      #main__banner-{{ block.id }} .main__banner-mini-images-container {
+        order: 2;
+      }
+    {% endfor %}
+
+  }
+
+</style>
+
+<section id="mini__banners-grid-{{ section.id }}" class="mini__banners-grid page-width section-{{ section.id }}-padding">
+  <h2 style="color: {{ section.settings.title_color }};">{{ section.settings.title }}</h2>
+  <div class="mini_banner-grid-container">
+    {% for block in section.blocks %}
+      {%- case block.type -%}
+        {%- when 'main_banner' -%}
+            <div class="main__banner" id="main__banner-{{ block.id }}" {{block.shopify_attributes}}>
+              <div class="main__banner-text">
+                {% if block.settings.pretitle != blank %}
+                  <p>{{ block.settings.pretitle }}</p>
+                {% endif %}
+                {% if block.settings.title != blank %}
+                 <h2 class="main__banner-heading">{{ block.settings.title }}</h2>
+                {% endif %}
+                {% if block.settings.button_label != blank %}
+                  <a 
+                  {% if block.settings.url %}
+                    href="{{ block.settings.url }}"
+                  {% else %}
+                    role="link" 
+                    aria-disabled="true"
+                  {% endif %}
+                  class="button button--primary"
+                  >
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                {% endif %}
+              </div>
+              {% if block.settings.main_image != blank %}
+                <div class="main__banner-image" id="main-image-{{ block.id }}">
+                  <img 
+                    src="{{ block.settings.main_image | img_url: 'master'}}" 
+                    alt="{{ block.settings.main_image.alt }}"
+                    class="main__image"
+                    loading="lazy"
+                  >
+                </div>
+              {% endif %}
+              <div class="main__banner-mini-images-container">
+                <div class="main__banner-mini-images">
+                  {% if block.settings.small_image1 != blank %}
+                    <div class="mini__images-container">
+                      <img 
+                        src="{{ block.settings.small_image1 | img_url: 'master' }}" 
+                        alt="{{ block.settings.small_image1.alt}}"
+                        class="mini__image"
+                        loading="lazy"
+                      >
+                    </div>
+                  {% endif %}
+                  {% if block.settings.small_image2 != blank %}
+                    <div class="mini__images-container">
+                      <img 
+                        src="{{ block.settings.small_image2 | img_url: 'master' }}" 
+                        alt="{{ block.settings.small_image2.alt}}"
+                        class="mini__image"
+                        loading="lazy"
+                      >
+                    </div>
+                  {% endif %}
+                  {% if block.settings.small_image3 != blank %}
+                    <div class="mini__images-container">
+                      <img 
+                        src="{{ block.settings.small_image3 | img_url: 'master' }}" 
+                        alt="{{ block.settings.small_image3.alt}}"
+                        class="mini__image"
+                        loading="lazy"
+                      >
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+      {%- endcase -%}
+    {% endfor %}
+    <div class="mini__banners-grid">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'secondary_banner' %}
+            <div class="mini__banner" id="mini__banner-{{ block.id }}">
+              <div class="mini__banner-text-container">
+                {% if block.settings.pretitle != blank %}
+                  <p>{{ block.settings.pretitle }}</p>
+                {% endif %}
+                {% if block.settings.title != blank %}
+                 <h2 class="main__banner-heading">{{ block.settings.title }}</h2>
+                {% endif %}
+                {% if block.settings.button_label != blank %}
+                  <a 
+                  {% if block.settings.url %}
+                    href="{{ block.settings.url }}"
+                  {% else %}
+                    role="link" 
+                    aria-disabled="true"
+                  {% endif %}
+                  class="button"
+                  >
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                {% endif %}
+              </div>
+              <div class="mini__banner-image-container" id="mini__banner-image--{{ block.id }}">
+                {% if block.settings.main_image != blank %}
+                    <img 
+                      src="{{ block.settings.main_image | img_url: 'master'}}" 
+                      alt="{{ block.settings.main_image.alt }}"
+                      class="mini__banner-image"
+                      loading="lazy"
+                    >
+                {% endif %}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Mini banners grid",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Encuentra todo en"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#f1f1f1"
+    },
+    {
+      "type": "range",
+      "id": "banners_border_radius",
+      "label": "Banners border radius",
+      "unit": "px",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_columns",
+      "label": "Reverse columns",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Banner text color settings"
+    },
+    {
+      "type": "color",
+      "id": "banner_text_color",
+      "label": "Banner text colors",
+      "default": "#FFF"
+    },
+    {
+      "type": "color",
+      "id": "banner_button_color",
+      "label": "Banners button color",
+      "default": "#FFF"
+    },
+    {
+      "type": "color",
+      "id": "banner_button_text_color",
+      "label": "Banners button text color",
+      "default": "#268ECD"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+     "type": "main_banner",
+     "name": "Main banner",
+     "limit": 1, 
+     "settings": [
+        {
+          "type": "color_background",
+          "id": "background",
+          "label": "Banner background color",
+          "default": "linear-gradient(#ffffff, #000000)"
+        },
+        {
+          "type": "text",
+          "id": "pretitle",
+          "label": "Pre title",
+          "default": "Categoria"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Hogar y Decoración"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Url title",
+          "default": "Ver todo"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        },
+        {
+          "type": "header",
+          "content": "Images"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main image"
+        },
+        {
+          "type": "range",
+          "id": "main_image_scale",
+          "label": "Main image scale",
+          "unit": "%",
+          "min": 0,
+          "max": 99,
+          "step": 1,
+          "default": 0
+        },
+        {
+          "type": "image_picker",
+          "id": "small_image1",
+          "label": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "small_image2",
+          "label": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "small_image3",
+          "label": "image"
+        }
+      ]
+    },
+    {
+    "type": "secondary_banner",
+    "name": "Small banner",
+    "settings": [
+        {
+          "type": "color_background",
+          "id": "background",
+          "label": "Banner background color",
+          "default": "linear-gradient(#ffffff, #000000)"
+        },
+        {
+          "type": "text",
+          "id": "pretitle",
+          "label": "Pre title",
+          "default": "Categoria"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Juegos y Juguetes"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Url title",
+          "default": "Ver todo"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        },
+        {
+          "type": "header",
+          "content": "Images"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main image"
+        },
+        {
+          "type": "range",
+          "id": "main_image_scale",
+          "label": "Main image scale",
+          "unit": "%",
+          "min": 0,
+          "max": 99,
+          "step": 1,
+          "default": 0
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mini banners grid",
+      "blocks": [
+        {
+          "type": "main_banner"
+        },
+        {
+          "type": "secondary_banner"
+        },
+        {
+          "type": "secondary_banner"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
