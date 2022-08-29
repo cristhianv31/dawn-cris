@@ -267,6 +267,40 @@
         "bg_opacity": 0.4,
         "color_background1": "#E1E1E1"
       }
+    },
+    "1661741250daeb6c33": {
+      "type": "collection-switcher",
+      "blocks": {
+        "16617412498b1f0568-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "airpods"
+          }
+        },
+        "16617412498b1f0568-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "apple-watch-bands"
+          }
+        },
+        "16617412498b1f0568-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "covers"
+          }
+        }
+      },
+      "block_order": [
+        "16617412498b1f0568-0",
+        "16617412498b1f0568-1",
+        "16617412498b1f0568-2"
+      ],
+      "settings": {
+        "heading": "¿Qué deseas ver?",
+        "product_count": 4,
+        "arrow_color": "#000",
+        "autoplay": false
+      }
     }
   },
   "order": [
@@ -276,6 +310,7 @@
     "collage",
     "video",
     "multicolumn",
-    "1661741118685bcdd7"
+    "1661741118685bcdd7",
+    "1661741250daeb6c33"
   ]
 }
