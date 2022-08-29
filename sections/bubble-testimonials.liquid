@@ -14,9 +14,12 @@
 }
 
   @media screen and (max-width: 768px) {
+    {% if section.settings.bg_image != blank %}
     .section-testimonial {
       background-image: linear-gradient(rgba(0,0,0,{{ section.settings.bg_opacity }}), rgba(0,0,0,{{ section.settings.bg_opacity }})),url('{{ section.settings.bg_image_mobile | img_url: 'master'}}');
     }
+    {% endif %}
+    background-color: {{section.settings.testimonial_bgcolor}};
   }
 
 .typing-bubble {
