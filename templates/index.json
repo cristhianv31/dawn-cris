@@ -578,6 +578,79 @@
         "highlight": "#0099ff",
         "highlight-text": "#ffffff"
       }
+    },
+    "1661741834c9da5f0e": {
+      "type": "haciendola-carousel-testimonials",
+      "blocks": {
+        "a1d69073-4bf5-48b5-9751-d9e228e536e7": {
+          "type": "testimonial",
+          "settings": {
+            "background_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Cris-Avatar.png",
+            "author": "John Doe",
+            "author_color": "#444444",
+            "author_font_size": 1,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur consectetur<\/p>",
+            "testimonial_color": "#444444",
+            "testimonial_font_size": 1
+          }
+        },
+        "32f1887f-7e7b-4f91-a9b6-10702770ec26": {
+          "type": "testimonial",
+          "settings": {
+            "background_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Cris-Avatar.png",
+            "author": "John Doe",
+            "author_color": "#444444",
+            "author_font_size": 1,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur consectetur<\/p>",
+            "testimonial_color": "#444444",
+            "testimonial_font_size": 1
+          }
+        },
+        "8645f94b-871a-4df6-9756-1567885fc8f2": {
+          "type": "testimonial",
+          "settings": {
+            "background_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Cris-Avatar.png",
+            "author": "John Doe",
+            "author_color": "#444444",
+            "author_font_size": 1,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur consectetur<\/p>",
+            "testimonial_color": "#444444",
+            "testimonial_font_size": 1
+          }
+        },
+        "eff86050-a7ee-4fc2-a59a-3097ce11b6a4": {
+          "type": "testimonial",
+          "settings": {
+            "background_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Cris-Avatar.png",
+            "author": "John Doe",
+            "author_color": "#444444",
+            "author_font_size": 1,
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur consectetur<\/p>",
+            "testimonial_color": "#444444",
+            "testimonial_font_size": 1
+          }
+        }
+      },
+      "block_order": [
+        "a1d69073-4bf5-48b5-9751-d9e228e536e7",
+        "32f1887f-7e7b-4f91-a9b6-10702770ec26",
+        "8645f94b-871a-4df6-9756-1567885fc8f2",
+        "eff86050-a7ee-4fc2-a59a-3097ce11b6a4"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "text_font_size": 1.5,
+        "color_scheme": "background-1",
+        "custom_bg_color": "#ffffff",
+        "custom_text_color": "#000000",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -590,6 +663,7 @@
     "1661741118685bcdd7",
     "1661741250daeb6c33",
     "1661741374da929fd5",
-    "1661741597b6fbed82"
+    "1661741597b6fbed82",
+    "1661741834c9da5f0e"
   ]
 }
